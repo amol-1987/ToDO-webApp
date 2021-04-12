@@ -1,0 +1,18 @@
+{% extends 'app1/main.html' %}
+
+{% block content %}
+
+
+<h1>Create New Register here</h1>
+
+<form method="post">
+
+	{{form.as_p}}
+	{% csrf_token %}
+	<input type="submit" value="Login" name="Submit">
+
+</form>
+
+<p>Already have account ? <a href="{% url 'login' %}">Login</a></p>
+
+{% endblock content %}
