@@ -1,0 +1,21 @@
+{% extends 'app1/main.html' %}
+
+{% block content %}
+
+
+
+
+
+<div class="task-item-wrapper">
+	{% for q in ques %}
+	
+		<a href="{% url 'que' q.id %}">{{q}}</a>
+	
+		
+	{% endfor %}
+
+</div>
+
+
+
+{% endblock content %}
